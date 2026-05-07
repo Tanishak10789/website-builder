@@ -1,21 +1,19 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getAnalytics } from "firebase/analytics";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: "dora-ai-cd26a.firebaseapp.com",
-  projectId: "dora-ai-cd26a",
-  storageBucket: "dora-ai-cd26a.firebasestorage.app",
-  messagingSenderId: "774438834279",
-  appId: "1:774438834279:web:f2b85ea5cdc71dc4b284c2"
+  authDomain: "aiwebsitebuilder-82844.firebaseapp.com",
+  projectId: "aiwebsitebuilder-82844",
+  storageBucket: "aiwebsitebuilder-82844.firebasestorage.app",
+  messagingSenderId: "167259396566",
+  appId: "1:167259396566:web:63c7939b4f70ecbd71ec77",
+  measurementId: "G-J7F94Q6DBZ"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 const auth = getAuth(app)
 const provider = new GoogleAuthProvider()
 
